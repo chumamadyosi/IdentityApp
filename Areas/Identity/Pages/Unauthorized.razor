@@ -1,0 +1,11 @@
+﻿@inject NavigationManager NavigationManager
+
+<h3>Unauthorized</h3>
+
+@code {
+    protected override async Task OnInitializedAsync()
+    {
+        NavigationManager.NavigateTo("Identity/Account/Login", true); 
+    }
+
+}
